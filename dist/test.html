@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<title>slt-html</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<link rel="icon" type="image/png" href="assets/images/favicon_16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="assets/images/favicon_32x32.png" sizes="32x32">
+		<link rel="shortcut icon" href="assets/images/favicon.ico">
+		<link rel="apple-touch-icon" href="assets/images/svg/appletouch-icon.svg">
+		<meta property="og:image" content="assets/images/opengraph2.jpg">
+		<script defer="defer" src="assets/vendor.js"></script>
+		<script defer="defer" src="assets/app.js"></script>
+		<link href="322.css" rel="stylesheet">
+		<link href="app.css" rel="stylesheet">
+	</head>
+
+	<body class="body body--unvisible">
+		<div class="wrapper">
+			<main class="main"><input class="test-file" type="file"><button class="test-button">delete</button>
+				<div class="call-modal" data-fancy-modal="call">
+					<div class="call-modal__container">
+						<h4 class="call-modal__title">Обратный звонок</h4>
+						<form class="form" action="/" data-parsley-validate="data-parsley-validate" data-form="call-form">
+							<div class="form__item"><input class="form__input" id="input" placeholder="Имя*" required="required" /></div>
+							<div class="form__item"><input class="form__input" id="input" type="tel" placeholder="Телефон*" required="required" data-tel-input="data-tel-input" /></div>
+							<div class="form__inner">
+								<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" name="call-checkbox" required="required" />
+										<div class="checkbox__box"><svg class="checkbox__svg" width="15" height="11" viewbox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.5 4.5L6 9L14 1" stroke="#04b2d1" stroke-width="1.5"></path>
+											</svg></div>
+										<div class="checkbox__text">Даю согласие на обработку</div>
+									</label><a class="checkbox__link" href="#">персональных данных</a></div>
+							</div>
+							<div class="form__inner"><button class="button button--blue button--wide--mobile"><span class="button__text"><span>Отправить</span></span>
+									<div class="button__icon"><svg class="button__svg" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M9.72386 6.66672H0V5.33338H9.72386L5.5286 1.13812L6.4714 0.195312L12.2761 6.00005L6.4714 11.8048L5.5286 10.862L9.72386 6.66672Z" fill="white"></path>
+										</svg></div>
+								</button></div>
+						</form>
+					</div>
+				</div>
+				<div class="search-modal" data-fancy-modal="search">
+					<div class="search-modal__container">
+						<form class="search-modal__form" action="/">
+							<div class="search-modal__col" data-search-container=""><input class="search-modal__input" placeholder="Что вы хотите найти?" data-search-input="" />
+								<div class="search-modal__icon hidden" data-search-button="data-search-button"><svg class="search-modal__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4142 11.9996L19.7782 18.3635L18.364 19.7777L12 13.4138L5.63604 19.7777L4.22183 18.3635L10.5858 11.9996L4.22183 5.6356L5.63604 4.22138L12 10.5853L18.364 4.22138L19.7782 5.6356L13.4142 11.9996Z" fill="#3F3F40"></path>
+									</svg></div>
+							</div>
+							<div class="search-modal__col">
+								<div class="search-modal__btn"><button class="button button--wide--mobile button-animate"><span class="button__text"><span>Поиск</span></span>
+										<div class="button__icon"><svg class="button__svg arrow-blue" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M9.72386 6.66672H0V5.33338H9.72386L5.5286 1.13812L6.4714 0.195312L12.2761 6.00005L6.4714 11.8048L5.5286 10.862L9.72386 6.66672Z" fill="white"></path>
+											</svg></div>
+									</button></div><button class="search-modal__button"><svg class="arrow-blue search-modal__button-svg" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.72386 6.66672H0V5.33338H9.72386L5.5286 1.13812L6.4714 0.195312L12.2761 6.00005L6.4714 11.8048L5.5286 10.862L9.72386 6.66672Z" fill="white"></path>
+									</svg></button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="response" data-fancy-modal="response" data-response="call-form">
+					<div class="response__container">
+						<div class="response__icon"><svg class="response__svg" width="97" height="97" viewbox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="48.5" cy="48.5" r="47.75" fill="white" stroke="#04b2d1" stroke-width="1.5"></circle>
+								<path d="M28.2402 45.8784L43.1239 60.1646L69.9871 34.3798" stroke="#04b2d1" stroke-width="1.5"></path>
+							</svg></div>
+						<h5 class="response__title">Отправлено</h5>
+						<div class="response__text">Спасибо, мы с вами свяжемся в ближайшее время</div>
+						<div class="response__button">
+							<div class="button" data-fancybox-close="">Закрыть</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<div class="grid-test">
+				<div class="container">
+					<div class="grid-test__row">
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+						<div class="grid-test__col"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
